@@ -31,8 +31,9 @@
     padding-left: 8px;
   }
 
+          /* Box stuff is separate into the left and right boxes for the different sides of the screen. */
   /* For workout stuff */
-  .workbox{
+  .workleft{
     background-color: rgb(168, 55, 83);
     color: white;
     font-family: "Bree Serif", serif;
@@ -44,10 +45,36 @@
     flex-direction: column;
     border: solid black;
     padding-left: 8px;
+    width: 40%;
+    height: 280px;
+      display: flex;
+      position: absolute;
+      left: 25px;
+      margin-top: 25px;
+  }
+
+  .workright{
+    background-color: rgb(168, 55, 83);
+    color: white;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    flex-direction: column;
+    border: solid black;
+    padding-left: 8px;
+    width: 40%;
+    height: 280px;
+      display: flex;
+      position: absolute;
+      right: 25px;
+      margin-top: 25px;
   }
 
   /* For the Pokemon stuff */
-  .pokebox{
+  .pokeleft{
     background-color: rgb(185, 155, 185);
     color: white;
     font-family: "Bree Serif", serif;
@@ -59,4 +86,30 @@
     flex-direction: column;
     border: solid black;
     padding-left: 8px;
+    width: 40%;
+    height: 260px;
+      display: flex;
+      position: absolute;
+      left: 40px;
+      margin-top: 360px;
+  }
+
+  .pokeright{
+    background-color: rgb(185, 155, 185);
+    color: white;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    flex-direction: column;
+    border: solid black;
+    padding-left: 8px;
+    width: 40%;
+    height: 260px;
+      display: flex;
+      position: absolute;
+      right: 40px;
+      margin-top: 360px;
   }
