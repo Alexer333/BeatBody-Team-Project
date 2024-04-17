@@ -7,6 +7,8 @@ completeBtn.addEventListener("click", function () {
   const congrats = document.createElement("p");
   congrats.innerHTML = " Way to go! Lets go catch a pokemon";
   document.getElementById("afterworkout").appendChild(congrats);
+  //show the fetch pokemon
+  document.getElementById("fetchContainer").style.display = "block";
 });
 
 let incompleteBtn = document.getElementById("incomplete-btn");
