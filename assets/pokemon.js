@@ -1,3 +1,21 @@
+//did you complete workout
+//need button response for complete
+//need button response for incomplete
+
+let completeBtn = document.getElementById("completed-btn");
+completeBtn.addEventListener("click", function () {
+  const congrats = document.createElement("p");
+  congrats.innerHTML = " Way to go! Lets go catch a pokemon";
+  document.getElementById("afterworkout").appendChild(congrats);
+});
+
+let incompleteBtn = document.getElementById("incomplete-btn");
+incompleteBtn.addEventListener("click", function () {
+  const nextTime = document.createElement("p");
+  nextTime.innerHTML = "That's okay try again!";
+  document.getElementById("afterworkout").appendChild(nextTime);
+});
+
 const fetchRandomPokemon = async () => {
   const randomPokemonId = Math.floor(Math.random() * 151) + 1; // There are currently 898 Pokémon
   const response = await fetch(
