@@ -24,7 +24,9 @@ displayWorkouts(data)
         console.error(error);
     }
 }
+// empty div goes on top or goes on bottom?
 function displayWorkouts(data){
+    clearContent("excercise-demo")
     console.log(data)
 for (let i = 0; i < data.length; i++){
     // loop through data to show workout card
@@ -42,7 +44,20 @@ workoutCard.appendChild(workoutName)
 workoutCard.appendChild(image)
     // append card to page
     document.getElementById("excercise-demo").appendChild(workoutCard)
-    // be able to go to the next workout without 
+    // be able to go to the next workout without refresh to have a new workout img come up
+    // after workout is done transfers you to the part where the random pokemon pops up
+    // alert comes up when the pokemon is coming
+    
 }
 
 }
+
+// add a function that 
+function clearContent(elementId) {
+    document.getElementById(elementId).innerHTML = "";
+}
+
+
+
+// create a button for the alert message
+// have the button be on the side of the screen were ever you go and once done with the workout you can click it to have the alert pop out for you.
