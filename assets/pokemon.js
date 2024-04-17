@@ -13,11 +13,13 @@ const displayPokemonSprite = (pokemon) => {
     "pokemonSpriteContainer"
   );
   const pokemonSpriteImg = document.createElement("img");
-
+  const pokemonName = document.createElement("p");
   pokemonSpriteImg.src = pokemon.sprites.front_default;
   pokemonSpriteImg.alt = pokemon.name;
+  pokemonName.textContent = `${pokemon.name} #${pokemon.id}`;
   pokemonSpriteContainer.innerHTML = ""; // Clear previous content
   pokemonSpriteContainer.appendChild(pokemonSpriteImg);
+  pokemonSpriteContainer.appendChild(pokemonName);
 
   console.log("Pokemon Data:", pokemon);
 };
