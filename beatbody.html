@@ -12,10 +12,36 @@
 <!-- <h1 class="heed">TITLE</h1>
 <h3 class="hero">Bee Ipsum</h3>
 <body>
-    <div class="workleft">Placeholder</div>
-    <div class="workright">Placeholder</div>
-    <div class="pokeleft">Placeholder</div>
-    <div class="pokeright">Placeholder</div>
-</body> -->
+
+
+    <header>
+        <h1>BeatBody</h1>
+    </header>
+    <div>
+        <!-- where user inputs will go for excercise choices -->
+        <form id="excercise-form">
+            <label for="bodypart">Choose a body part</label>
+            <input id="workout" list="bodypart" name="bodypart">
+            <datalist id="bodypart">
+                <option value="back">back</option>
+                <option value="cardio">cardio</option>
+                <option value="chest">chest</option>
+                <option value="lower arms">lower arms</option>
+                <option value="lower legs">lower legs</option>
+                <option value="neck">neck</option>
+                <option value="shoulders">shoulders</option>
+                <option value="upper arms">upper arms</option>
+                <option value="upper legs">upper legs</option>
+                <option value="waist">waist</option>
+            </datalist>
+            <button id="submit" type="submit">submit</button>
+        </form>
+    </div>
+    <div id="excercise-demo">
+        <!-- where the excercise examples will populate -->
+
+        <script src="./assets/logic.js"></script>
+</body>
+
 
 </html>
