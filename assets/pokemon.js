@@ -6,7 +6,12 @@ let caughtPokemon = JSON.parse(localStorage.getItem("caughtPokemon")) || [];
 //need button response for complete
 //need button response for incomplete
 let completeBtn = document.getElementById("completed-btn");
+let incompleteBtn = document.getElementById("incomplete-btn");
+let messageContainer = document.getElementById("afterworkout");
+
 completeBtn.addEventListener("click", function () {
+  //clear message container
+  messageContainer.innerHTML = "";
   const congrats = document.createElement("p");
   congrats.innerHTML = " Way to go! Lets go catch a pokemon";
   document.getElementById("afterworkout").appendChild(congrats);
@@ -14,8 +19,9 @@ completeBtn.addEventListener("click", function () {
   document.getElementById("fetchContainer").style.display = "block";
 });
 
-let incompleteBtn = document.getElementById("incomplete-btn");
 incompleteBtn.addEventListener("click", function () {
+  //clear message container
+  messageContainer.innerHTML = "";
   const nextTime = document.createElement("p");
   nextTime.innerHTML = "That's okay try again!";
   document.getElementById("afterworkout").appendChild(nextTime);
