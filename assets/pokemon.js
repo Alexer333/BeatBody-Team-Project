@@ -68,4 +68,37 @@ document
       console.error("Error fetching Pokémon:", error);
     }
   });
+
 //need function to loop through local storage to populate pokemon sprites from local storage
+//retrieve local storage pokemon
+const getCaughtPokemonFromLocalStorage = function () {
+  return JSON.parse(localStorage.getItem("caughtPokemon")) || [];
+};
+
+const pokemonCollectionBtn = document.getElementById("pokemonCollection-btn");
+
+//create a display for pokemon in div
+const displayCaughtPokemon = function () {
+  const caughtPokemon = getCaughtPokemonFromLocalStorage();
+  const caughtPokemonContainer = document.getElementById("pokemonCollection");
+  //clear the container
+  caughtPokemonContainer.innerHTML = "";
+  //iterate over each caught pokemon and display it in the container
+  caughtPokemon.forEach(function (pokemon) {
+    let pokemonDiv = document.createElement("div");
+    let pokemonImg = document.createElement("img");
+    let pokemonId = document.createElement("p");
+
+    pokemonImg.src = pokemon.sprite;
+    pokemonId.textContent = `#${pokemon.id} ${pokemon.name}`;
+    //append the pokemon imgs
+    pokemonDiv.appendChild(pokemonImg);
+    pokemonDiv.appendChild(pokemonId);
+
+    caughtPokemonContainer.appendChild(pokemonDiv);
+  });
+};
+
+pokemonCollectionBtn.addEventListener("click", function () {
+  displayCaughtPokemon();
+});
