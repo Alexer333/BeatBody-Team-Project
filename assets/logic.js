@@ -32,8 +32,12 @@ function displayWorkouts(data) {
     // loop through data to show workout card
     //  create the div that the card
     const workoutCard = document.createElement("div");
+
+    workoutCard.className = "task-card"
 // to make the div element draggable test out to make sure this part on line 36 works
+
 // dragElement(document.getElementById("excercise-demo"));
+
     // create the title of the care h1 or h2
     // workName means  i am creating a h1
     const workoutName = document.createElement("h1");
@@ -42,10 +46,16 @@ function displayWorkouts(data) {
     const image = document.createElement("img");
     image.setAttribute("src", data[i].gifUrl);
     // append the title and image to the card
+
     workoutCard.appendChild(workoutName);
     workoutCard.appendChild(image);
     // append card to page
     document.getElementById("excercise-demo").appendChild(workoutCard);
+    workoutCard.addEventListener("click", function(){
+      const workoutCardContainer = document.getElementById("workoutcard-container");
+      workoutCard.parentNode.removeChild(workoutCard);
+      workoutCardContainer.appendChild(workoutCard);
+    })
     // be able to go to the next workout without refresh to have a new workout img come up
     // after workout is done transfers you to the part where the random pokemon pops up
     // alert comes up when the pokemon is coming
