@@ -10,10 +10,8 @@
 </head>
 
 <body>
-
-
     <header>
-        <h1>BeatBody</h1>
+        <h1>FitMon</h1>
     </header>
     <div>
         where user inputs will go for excercise choices
@@ -37,10 +35,33 @@
     </div>
     <div id="excercise-demo">
         <!-- where the excercise examples will populate -->
+    </div>
 
-        <div></div>
+    <div>
+        <h1>Your Workout</h1>
+        <!-- where workcards go -->
+        <div id="workoutcard-container"></div>
+    </div>
 
-        <script src="./assets/logic.js"></script>
+    <div id="completedWorkout">
+        <h3>Hey did you finish your workout?</h3>
+        <button id="completed-btn">you bet!</button>
+        <button id="incomplete-btn">not this time</button>
+        <div id="afterworkout"></div>
+    </div>
+    <div id="fetchContainer" style="display:none">
+        <h1>Who's that Pokemon!?</h1>
+        <button id="fetchPokemonButton">Fetch Random Pokémon</button>
+        <div id="pokemonSpriteContainer"></div>
+    </div>
+    <div id="storedPokemon">
+        <h2>Checkout your collection!</h2>
+        <button id="pokemonCollection-btn">Pokemon PC</button>
+        <div id="pokemonCollection"></div>
+    </div>
+
+    <script src="./assets/logic.js"></script>
+    <script src="./assets/pokemon.js"></script>
 </body>
 
 
