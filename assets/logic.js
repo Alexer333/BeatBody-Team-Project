@@ -59,12 +59,18 @@ function displayWorkouts(data) {
     // be able to go to the next workout without refresh to have a new workout img come up
     // after workout is done transfers you to the part where the random pokemon pops up
     // alert comes up when the pokemon is coming
+    clearInputField()
   }
 }
 
 // add a function that clears the  the body part words section
 function clearContent(elementId) {
   document.getElementById(elementId).innerHTML = "";
+}
+// needs to be clear after the button is hit  to submit
+function clearInputField() {
+  document.getElementById("workout").value = "";
+  console.log("its running")
 }
 
 // create cards draggable for workout
