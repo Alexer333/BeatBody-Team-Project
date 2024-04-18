@@ -99,7 +99,7 @@
   border: solid black;
   padding-left: 8px;
   width: 40%;
-  height: 260px;
+  height: fit-content;
     display: flex;
     position: absolute;
     left: 40px;
@@ -120,7 +120,7 @@
   border: solid black;
   padding-left: 8px;
   width: 40%;
-  height: 260px;
+  height: fit-content;
     display: flex;
     position: absolute;
     right: 40px;
