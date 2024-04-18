@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <header>
+    <header class="heed">
         <h1>FitMon</h1>
     </header>
-    <div>
+    <div class="hero"></div>
+    <div class="workleft">
         where user inputs will go for excercise choices
         <form id="excercise-form">
             <label for="bodypart">Choose a body part</label>
@@ -32,29 +33,30 @@
             </datalist>
             <button id="submit" type="submit">submit</button>
         </form>
-    </div>
-    <div id="excercise-demo">
-        <!-- where the excercise examples will populate -->
+        <div id="excercise-demo">
+            <!-- where the excercise examples will populate -->
+        </div>
     </div>
 
-    <div>
+
+    <div class="workright">
         <h1>Your Workout</h1>
         <!-- where workcards go -->
         <div id="workoutcard-container"></div>
     </div>
 
-    <div id="completedWorkout">
+    <div id="completedWorkout" class="pokeright">
         <h3>Hey did you finish your workout?</h3>
         <button id="completed-btn">you bet!</button>
         <button id="incomplete-btn">not this time</button>
         <div id="afterworkout"></div>
     </div>
-    <div id="fetchContainer" style="display:none">
+    <div id="fetchContainer" style="display:none" class="pcmodal">
         <h1>Who's that Pokemon!?</h1>
         <button id="fetchPokemonButton">Fetch Random Pokémon</button>
         <div id="pokemonSpriteContainer"></div>
     </div>
-    <div id="storedPokemon">
+    <div id="storedPokemon" class="pokeleft">
         <h2>Checkout your collection!</h2>
         <button id="pokemonCollection-btn">Pokemon PC</button>
         <div id="pokemonCollection"></div>
