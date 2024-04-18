@@ -1,155 +1,155 @@
 /* The main font... */
 .bree-serif-regular {
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }  
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}  
 
-  .texty {
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-  }  
+.texty {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}  
 
-  .heed{
-    background-color: rgb(204, 0, 0);
-    color: white;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 100%;
-    height: 100px;
-    padding: 0px;
-    display: inline-block;
-    text-align: center;
-    font-size: 72px;
-    text-shadow: 3px 4px 3px rgb(69, 48, 102);
-  }
+.heed{
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  display: inline-block;
+  text-align: center;
+  font-size: 72px;
+  text-shadow: 3px 4px 3px rgb(69, 48, 102);
+}
 
-  .hero{
-    background-color: rgba(218, 218, 218, 0.911);
-    color: white;
-    color: black;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 100%;
-    height: 98px;
-    padding: 0px;
-    display: inline-block;
-    padding-left: 8px;
-  }
+.hero{
+  background-color: rgba(218, 218, 218, 0.911);
+  color: white;
+  color: black;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  height: 98px;
+  padding: 0px;
+  display: inline-block;
+  padding-left: 8px;
+}
 
-          /* Box stuff is separate into the left and right boxes for the different sides of the screen. */
-  /* For workout stuff */
-  .workleft{
-    background-color: rgb(168, 55, 83);
-    color: white;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
-    flex-direction: column;
-    border: solid black;
-    padding-left: 8px;
-    width: 40%;
-    height: fit=content;
-      display: flex;
-      position: absolute;
-      left: 25px;
-      margin-top: 25px;
-      border-radius: 8px 8px 8px 8px;
-  }
-
-  .workright{
-    background-color: rgb(168, 55, 83);
-    color: white;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
-    flex-direction: column;
-    border: solid black;
-    padding-left: 8px;
-    width: 40%;
-    height: fit-content;
-      display: flex;
-      position: absolute;
-      right: 25px;
-      margin-top: 25px;
-      border-radius: 8px 8px 8px 8px;
-  }
-
-  /* For the Pokemon stuff */
-  .pokeleft{
-    background-color: rgb(185, 155, 185);
-    color: rgb(0, 0, 0);
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    border: solid black;
-    padding-left: 8px;
-    width: 40%;
-    height: 260px;
-      display: flex;
-      position: absolute;
-      left: 40px;
-      margin-top: 360px;
-      border-radius: 8px 8px 8px 8px;
-  }
-
-  .pokeright{
-    background-color: rgb(185, 155, 185);
-    color: rgb(0, 0, 0);
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    border: solid black;
-    padding-left: 8px;
-    width: 40%;
-    height: 260px;
-      display: flex;
-      position: absolute;
-      right: 40px;
-      margin-top: 360px;
-      border-radius: 8px 8px 8px 8px;
-  }
-
-  pressy{
-    width: 50px;
-    background-color: rgba(255, 255, 255, 0.76);
-    text-align: center;
-    margin: auto;
-  }
-
-  /* The modal... very WIP */
-  .pcmodal{
+        /* Box stuff is separate into the left and right boxes for the different sides of the screen. */
+/* For workout stuff */
+.workleft{
+  background-color: rgb(168, 55, 83);
+  color: white;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: auto;
+  flex-direction: column;
+  border: solid black;
+  padding-left: 8px;
+  width: 40%;
+  height: fit=content;
     display: flex;
     position: absolute;
-    margin: auto;
-    padding-left: 25px;
-    top: 0; bottom: 180;
-    left: 0; right: 0;
-    background-image: linear-gradient(rgb(156, 8, 8), rgb(160, 160, 160));
-    color: rgb(255, 255, 255);
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 480px;
-    height: 480px;
+    left: 25px;
+    margin-top: 25px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.workright{
+  background-color: rgb(168, 55, 83);
+  color: white;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: auto;
+  flex-direction: column;
+  border: solid black;
+  padding-left: 8px;
+  width: 40%;
+  height: fit-content;
+    display: flex;
     position: absolute;
-    border: solid black;
+    right: 25px;
+    margin-top: 25px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+/* For the Pokemon stuff */
+.pokeleft{
+  background-color: rgb(185, 155, 185);
+  color: rgb(0, 0, 0);
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: solid black;
+  padding-left: 8px;
+  width: 40%;
+  height: 260px;
+    display: flex;
+    position: absolute;
+    left: 40px;
+    margin-top: 360px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.pokeright{
+  background-color: rgb(185, 155, 185);
+  color: rgb(0, 0, 0);
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: solid black;
+  padding-left: 8px;
+  width: 40%;
+  height: 260px;
+    display: flex;
+    position: absolute;
+    right: 40px;
+    margin-top: 360px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+pressy{
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.76);
+  text-align: center;
+  margin: auto;
+}
+
+/* The modal... very WIP */
+.pcmodal{
+  display: flex;
+  position: absolute;
+  margin: auto;
+  padding-left: 25px;
+  top: 0; bottom: 180;
+  left: 0; right: 0;
+  background-image: linear-gradient(rgb(156, 8, 8), rgb(160, 160, 160));
+  color: rgb(255, 255, 255);
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  border: solid black;
 }
