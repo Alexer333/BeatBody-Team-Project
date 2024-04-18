@@ -116,3 +116,4 @@ function clearContent(elementId) {
 
 // have the droppable card not erase themselves when they pick a new body part
 
+
