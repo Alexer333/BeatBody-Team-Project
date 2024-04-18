@@ -45,6 +45,7 @@ function displayWorkouts(data) {
     workoutName.innerHTML = data[i].name;
     // create the image for the card
     const image = document.createElement("img");
+    image.addclassName = "task-img";
     image.setAttribute("src", data[i].gifUrl);
     // append the title and image to the card
 
