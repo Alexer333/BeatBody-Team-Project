@@ -33,14 +33,15 @@ function displayWorkouts(data) {
     //  create the div that the card
     const workoutCard = document.createElement("div");
 
-    workoutCard.className = "task-card"
-// to make the div element draggable test out to make sure this part on line 36 works
+    workoutCard.className = "task-card";
+    // to make the div element draggable test out to make sure this part on line 36 works
 
-// dragElement(document.getElementById("excercise-demo"));
+    // dragElement(document.getElementById("excercise-demo"));
 
     // create the title of the care h1 or h2
     // workName means  i am creating a h1
     const workoutName = document.createElement("h1");
+    workoutName.className = "task-name";
     workoutName.innerHTML = data[i].name;
     // create the image for the card
     const image = document.createElement("img");
@@ -51,15 +52,17 @@ function displayWorkouts(data) {
     workoutCard.appendChild(image);
     // append card to page
     document.getElementById("excercise-demo").appendChild(workoutCard);
-    workoutCard.addEventListener("click", function(){
-      const workoutCardContainer = document.getElementById("workoutcard-container");
+    workoutCard.addEventListener("click", function () {
+      const workoutCardContainer = document.getElementById(
+        "workoutcard-container"
+      );
       workoutCard.parentNode.removeChild(workoutCard);
       workoutCardContainer.appendChild(workoutCard);
-    })
+    });
     // be able to go to the next workout without refresh to have a new workout img come up
     // after workout is done transfers you to the part where the random pokemon pops up
     // alert comes up when the pokemon is coming
-    clearInputField()
+    clearInputField();
   }
 }
 
@@ -70,13 +73,11 @@ function clearContent(elementId) {
 // needs to be clear after the button is hit  to submit
 function clearInputField() {
   document.getElementById("workout").value = "";
-  console.log("its running")
+  console.log("its running");
 }
 
 // create cards draggable for workout
 // aks questio to see if line 36 needs to be above the function
-
-
 
 // div.addEventListener("mousedown", onmousedown);
 
@@ -112,14 +113,10 @@ function clearInputField() {
 //   event.target.removeEventListener("mouseleave", onMouseMove);
 //   console.log ("does this work")
 // }
-  // ISSUE: about about this whole code from 63 to 96 and then until i am done with the function
-  
+// ISSUE: about about this whole code from 63 to 96 and then until i am done with the function
 
 // ISSUE: was trying to have it where the user can drag the image did not work but no console errors popped up?
-
 
 // droppable box for the cards  to make there own workout that is given
 
 // have the droppable card not erase themselves when they pick a new body part
-
-
