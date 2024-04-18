@@ -36,7 +36,7 @@ const displayPokemonSprite = (pokemon) => {
   const pokemonName = document.createElement("p");
   pokemonSpriteImg.src = pokemon.sprites.front_default;
   pokemonSpriteImg.alt = pokemon.name;
-  pokemonName.textContent = `${pokemon.name} #${pokemon.id}`;
+  pokemonName.textContent = `#${pokemon.id} ${pokemon.name}`;
   pokemonSpriteContainer.innerHTML = ""; // Clear previous content
   pokemonSpriteContainer.appendChild(pokemonSpriteImg);
   pokemonSpriteContainer.appendChild(pokemonName);
@@ -44,7 +44,7 @@ const displayPokemonSprite = (pokemon) => {
   console.log("Pokemon Data:", pokemon);
 };
 
-// Event listener for the fetch Pokemon button
+// event listener for the fetch Pokemon button
 document
   .getElementById("fetchPokemonButton")
   .addEventListener("click", async () => {
@@ -58,3 +58,4 @@ document
       console.error("Error fetching Pokémon:", error);
     }
   });
+//need function to loop through local storage to populate pokemon sprites from local storage
