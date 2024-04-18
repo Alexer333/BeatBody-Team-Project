@@ -108,3 +108,10 @@ const displayCaughtPokemon = function () {
 pokemonCollectionBtn.addEventListener("click", function () {
   displayCaughtPokemon();
 });
+//add a button that will close out the pokemon collection
+let closeBtn = document.querySelector("#closePokemonCollection");
+let collectionContainer = document.getElementById("pokemonCollection");
+closeBtn.addEventListener("click", function () {
+  // hide the Pokémon collection container
+  collectionContainer.innerHTML = "";
+});
