@@ -6,21 +6,24 @@
   }  
 
   .heed{
-    background-color: rgb(135, 135, 238);
+    background-color: rgb(204, 0, 0);
     color: white;
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    height: 105px;
+    height: 100px;
     padding: 0px;
     display: inline-block;
     text-align: center;
+    font-size: 72px;
+    text-shadow: 3px 4px 3px rgb(69, 48, 102);
   }
 
   .hero{
-    background-color: rgb(66, 66, 177);
+    background-color: rgba(218, 218, 218, 0.911);
     color: white;
+    color: black;
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -51,6 +54,7 @@
       position: absolute;
       left: 25px;
       margin-top: 25px;
+      border-radius: 8px 8px 8px 8px;
   }
 
   .workright{
@@ -71,12 +75,13 @@
       position: absolute;
       right: 25px;
       margin-top: 25px;
+      border-radius: 8px 8px 8px 8px;
   }
 
   /* For the Pokemon stuff */
   .pokeleft{
     background-color: rgb(185, 155, 185);
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -92,11 +97,12 @@
       position: absolute;
       left: 40px;
       margin-top: 360px;
+      border-radius: 8px 8px 8px 8px;
   }
 
   .pokeright{
     background-color: rgb(185, 155, 185);
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -112,4 +118,20 @@
       position: absolute;
       right: 40px;
       margin-top: 360px;
+      border-radius: 8px 8px 8px 8px;
   }
+
+  /* The modal... very WIP */
+  .pcmodal{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(rgb(156, 8, 8), rgb(160, 160, 160));
+    color: rgb(0, 0, 0);
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    border: solid black;
+}
