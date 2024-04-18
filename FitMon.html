@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>beatbody</title>
+    <title>FitMon</title>
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/foundation.css">
 </head>
@@ -17,7 +17,7 @@
     <div class="workleft">
         where user inputs will go for excercise choices
         <form id="excercise-form">
-            <label class="texty" for="bodypart">Choose a body part:</label>
+            <label for="bodypart">Choose a body part</label>
             <input id="workout" list="bodypart" name="bodypart">
             <datalist id="bodypart">
                 <option value="back">back</option>
@@ -31,7 +31,7 @@
                 <option value="upper legs">upper legs</option>
                 <option value="waist">waist</option>
             </datalist>
-            <input value="Submit" class="pressy" id="submit" type="submit"></input>
+            <button id="submit" type="submit">submit</button>
         </form>
         <div id="excercise-demo">
             <!-- where the excercise examples will populate -->
@@ -46,19 +46,19 @@
     </div>
 
     <div id="completedWorkout" class="pokeright">
-        <h3>Hey, did you finish your workout?</h3>
-        <input type="button" value="You betcha!!!" class="pressy" id="completed-btn"></button>
-        <input type="button" value="Not this time..." class="pressy" id="incomplete-btn"></button>
+        <h3>Hey did you finish your workout?</h3>
+        <button id="completed-btn">you bet!</button>
+        <button id="incomplete-btn">not this time</button>
         <div id="afterworkout"></div>
     </div>
     <div id="fetchContainer" style="display:none" class="pcmodal">
         <h1>Who's that Pokemon!?</h1>
-        <input type="button" value="Fetch Random Pokemon" class="pressy" id="fetchPokemonButton"></button>
+        <button id="fetchPokemonButton">Fetch Random Pokémon</button>
         <div id="pokemonSpriteContainer"></div>
     </div>
     <div id="storedPokemon" class="pokeleft">
         <h2>Checkout your collection!</h2>
-        <input type="button" value="Pokemon PC" class="pressy' id="pokemonCollection-btn"></button>
+        <button id="pokemonCollection-btn">Pokemon PC</button>
         <div id="pokemonCollection"></div>
     </div>
 
