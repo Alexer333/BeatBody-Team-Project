@@ -18,6 +18,6 @@ screenshots
 
 link to the application
 
-https://github.com/Alexer333/BeatBody-Team-Project
+github_repo: https://github.com/Alexer333/BeatBody-Team-Project
 
-https://github.com/Alexer333/BeatBody-Team-Project
+live_site: https://alexer333.github.io/BeatBody-Team-Project/
