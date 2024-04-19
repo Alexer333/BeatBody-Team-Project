@@ -80,6 +80,16 @@ document
     }
   });
 
+//close button for modal
+// get the close button inside the modal
+const closeButton = document.querySelector(".pcmodal .close-button");
+
+// add click event listener to the close button
+closeButton.addEventListener("click", function () {
+  // hide the modal
+  document.getElementById("fetchContainer").style.display = "none";
+});
+
 //need function to loop through local storage to populate pokemon sprites from local storage
 //retrieve local storage pokemon
 const getCaughtPokemonFromLocalStorage = function () {
