@@ -2,6 +2,7 @@
 // function to display Pokémon sprite on the page
 //initialize an empty array if there are no cuaght pokemon yet
 let caughtPokemon = JSON.parse(localStorage.getItem("caughtPokemon")) || [];
+
 //did you complete workout
 //need button response for complete
 //need button response for incomplete
@@ -15,6 +16,7 @@ completeBtn.addEventListener("click", function () {
   const congrats = document.createElement("p");
   congrats.innerHTML = " Way to go! Lets go catch a pokemon";
   document.getElementById("afterworkout").appendChild(congrats);
+
   //show the fetch pokemon
   document.getElementById("fetchContainer").style.display = "block";
 });
@@ -45,7 +47,7 @@ const displayPokemonSprite = (pokemon) => {
   pokemonSpriteImg.src = pokemon.sprites.front_default;
   pokemonSpriteImg.alt = pokemon.name;
   pokemonName.textContent = `#${pokemon.id} ${pokemon.name}`;
-  pokemonSpriteContainer.innerHTML = ""; // Clear previous content
+  pokemonSpriteContainer.innerHTML = "";
   pokemonSpriteContainer.appendChild(pokemonSpriteImg);
   pokemonSpriteContainer.appendChild(pokemonName);
 
@@ -59,15 +61,18 @@ document
     try {
       // fetch a random Pokémon
       const randomPokemon = await fetchRandomPokemon();
+
       //create a new pokemon obj
       const newPokemon = {
         name: randomPokemon.name,
         id: randomPokemon.id,
         sprite: randomPokemon.sprites.front_default,
       };
+
       //add the new pokemon to  the caught pokemon array
       caughtPokemon.push(newPokemon);
       localStorage.setItem("caughtPokemon", JSON.stringify(caughtPokemon));
+
       // display the Pokémon sprite on the page
       displayPokemonSprite(randomPokemon);
     } catch (error) {
@@ -86,9 +91,15 @@ const pokemonCollectionBtn = document.getElementById("pokemonCollection-btn");
 //create a display for pokemon in div
 const displayCaughtPokemon = function () {
   const caughtPokemon = getCaughtPokemonFromLocalStorage();
+
+  //sort the caughtPokemon array by id in ascending order
+  caughtPokemon.sort((a, b) => a.id - b.id);
+
   const caughtPokemonContainer = document.getElementById("pokemonCollection");
+
   //clear the container
   caughtPokemonContainer.innerHTML = "";
+
   //iterate over each caught pokemon and display it in the container
   caughtPokemon.forEach(function (pokemon) {
     let pokemonDiv = document.createElement("div");
@@ -97,10 +108,10 @@ const displayCaughtPokemon = function () {
 
     pokemonImg.src = pokemon.sprite;
     pokemonId.textContent = `#${pokemon.id} ${pokemon.name}`;
+
     //append the pokemon imgs
     pokemonDiv.appendChild(pokemonImg);
     pokemonDiv.appendChild(pokemonId);
-
     caughtPokemonContainer.appendChild(pokemonDiv);
   });
 };
@@ -108,6 +119,7 @@ const displayCaughtPokemon = function () {
 pokemonCollectionBtn.addEventListener("click", function () {
   displayCaughtPokemon();
 });
+
 //add a button that will close out the pokemon collection
 let closeBtn = document.querySelector("#closePokemonCollection");
 let collectionContainer = document.getElementById("pokemonCollection");
