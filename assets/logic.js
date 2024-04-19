@@ -36,7 +36,7 @@ function displayWorkouts(data) {
     workoutCard.className = "task-card"
 // to make the div element draggable test out to make sure this part on line 36 works
 
-// dragElement(document.getElementById("excercise-demo"));
+
 
     // create the title of the care h1 or h2
     // workName means  i am creating a h1
@@ -78,40 +78,7 @@ function clearInputField() {
 
 
 
-// div.addEventListener("mousedown", onmousedown);
 
-// function onMouseDown(event) {
-//   rect = event.target.getBoundingClientRect();
-//   let startingX = event.clientX;
-//   let startingY = event.clientY;
-
-//   event.target.rectX = rect.left;
-//   event.target.rectY = rect.top;
-//   event.target.startingX = startingX;
-//   event.target.startingY = startingY;
-
-//   document.addEventListener("mousemove", onMouseDown);
-// }
-
-// function onMouseMove(event) {
-//   let currentX = event.clientX;
-//   let currentY = event.clientY;
-//   event.target.style.position = "absolute";
-//   event.target.style.left = (event.target.rectX
-//   + currentX - Event.target.startingX + "PX");
-//   event.target.style.top = (event.target.rectY
-//   + currentY - event.target.startingY + "px");
-
-//   event.target.addEventListener("mouseup", cleanUpListners);
-//   event.target.addEventListener("mouseleave", cleanUpListners)
-// }
-
-// function cleanUpListners(event) {
-//   document.removeEventListener("mousemove", onMouseMove);
-//   event.target.removeEventListener("mouseup", onMouseMove);
-//   event.target.removeEventListener("mouseleave", onMouseMove);
-//   console.log ("does this work")
-// }
   // ISSUE: about about this whole code from 63 to 96 and then until i am done with the function
   
 
