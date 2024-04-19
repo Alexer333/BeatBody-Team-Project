@@ -43,22 +43,20 @@
 
         /* Box stuff is separate into the left and right boxes for the different sides of the screen. */
 /* For workout stuff */
+
+/* sample */
 .workleft{
   background-color: rgb(168, 55, 83);
   color: white;
   font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: normal;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: auto;
-  flex-direction: column;
+  justify-content: center;
   border: solid black;
   padding-left: 8px;
   width: 40%;
   height: fit=content;
     display: flex;
-    position: absolute;
     left: 25px;
     margin-top: 25px;
     border-radius: 8px 8px 8px 8px;
@@ -70,16 +68,13 @@
   font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: normal;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: auto;
-  flex-direction: column;
   border: solid black;
+  justify-content: center;
   padding-left: 8px;
   width: 40%;
   height: fit-content;
     display: flex;
-    position: absolute;
+    
     right: 25px;
     margin-top: 25px;
     border-radius: 8px 8px 8px 8px;
@@ -100,11 +95,9 @@
   padding-left: 8px;
   width: 40%;
   height: fit-content;
-    display: flex;
-    position: absolute;
-    left: 40px;
-    margin-top: 360px;
-    border-radius: 8px 8px 8px 8px;
+  left: 40px;
+  margin-top: 50px;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .pokeright{
@@ -121,15 +114,13 @@
   padding-left: 8px;
   width: 40%;
   height: fit-content;
-    display: flex;
-    position: absolute;
-    right: 40px;
-    margin-top: 360px;
-    border-radius: 8px 8px 8px 8px;
+  right: 40px;
+  margin-top: 50px;
+  border-radius: 8px 8px 8px 8px;
 }
 
-pressy{
-  width: 50px;
+.pressy{
+  width: auto;
   background-color: rgba(255, 255, 255, 0.76);
   text-align: center;
   margin: auto;
