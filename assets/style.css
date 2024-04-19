@@ -170,10 +170,17 @@ pressy{
   margin-bottom: 5px; 
 }
 
-
 .task-image {
   width: 100%; 
   height: auto; 
   border-radius: 5px; 
   margin-bottom: 5px;
+}
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pokemon-container div {
+  width: calc(15% - 20px); /* Adjust the width as needed */
+  margin: 10px;
 }
