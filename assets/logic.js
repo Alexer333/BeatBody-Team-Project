@@ -36,7 +36,11 @@ function displayWorkouts(data) {
     workoutCard.className = "task-card";
     // to make the div element draggable test out to make sure this part on line 36 works
 
+
+
+=======
     // dragElement(document.getElementById("excercise-demo"));
+
 
     // create the title of the care h1 or h2
     // workName means  i am creating a h1
@@ -86,6 +90,13 @@ function clearInputField() {
 // create cards draggable for workout
 // aks questio to see if line 36 needs to be above the function
 
+
+
+
+
+  // ISSUE: about about this whole code from 63 to 96 and then until i am done with the function
+  
+
 // div.addEventListener("mousedown", onmousedown);
 
 // function onMouseDown(event) {
@@ -121,6 +132,7 @@ function clearInputField() {
 //   console.log ("does this work")
 // }
 // ISSUE: about about this whole code from 63 to 96 and then until i am done with the function
+
 
 // ISSUE: was trying to have it where the user can drag the image did not work but no console errors popped up?
 
