@@ -16,7 +16,7 @@
   background-color: rgb(204, 0, 0);
   color: white;
   font-family: "Bree Serif", serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
   width: 100%;
   height: 100px;
@@ -28,14 +28,17 @@
 }
 
 .hero{
-  background-color: rgba(218, 218, 218, 0.911);
+  background-image:url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/08/pokemon-wcs-machop-machoke-machamp-1.jpg");
+  background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
   color: white;
   color: black;
   font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  height: 98px;
+  height: 350px;
   padding: 0px;
   display: inline-block;
   padding-left: 8px;

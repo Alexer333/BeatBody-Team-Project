@@ -57,9 +57,15 @@ function displayWorkouts(data) {
       const workoutCardContainer = document.getElementById(
         "workoutcard-container"
       );
-      workoutCard.parentNode.removeChild(workoutCard);
       workoutCardContainer.appendChild(workoutCard);
     });
+
+    document
+      .getElementById("excercise-demo")
+      .addEventListener("click", function () {
+        const excerciseDemo = document.getElementById("excercise-demo");
+        excerciseDemo.parentNode.removeChild(workoutCard);
+      });
     // be able to go to the next workout without refresh to have a new workout img come up
     // after workout is done transfers you to the part where the random pokemon pops up
     // alert comes up when the pokemon is coming
