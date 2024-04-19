@@ -1,9 +1,8 @@
 # FitMon-Team-Project
-First team project for the  FitMon application. 
 
+First team project for the FitMon application.
 
 Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
 
 unique name: we call it the fitmon
 
@@ -13,17 +12,12 @@ description: this porject is to combine exercising of your choosing with a pokem
 
 screenshots
 
-images\pick your own workout to do for class.png
-
-images\screenshot of project 1 for class.png
-
-images\after you finish your workout catch your pokemon for class.png
-
+<img alt="screenshot" src="./images/Screenshot 2024-04-19 101830.png">
+<img alt="screenshot" src="./images/Screenshot 2024-04-19 101913.png">
+<img alt="screenshot" src="./images/Screenshot 2024-04-19 101950.png">
 
 link to the application
 
-
 https://github.com/Alexer333/BeatBody-Team-Project
-
 
 https://github.com/Alexer333/BeatBody-Team-Project
